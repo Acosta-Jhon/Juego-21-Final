@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>JUEGA 21 !!!! </title>
+</head>
+
+<body>
+
+    <h1>🃏 JUEGALE AL 21 🃏 </h1>
+
+    <div id="contenedor">
+        <div id="contenedor2">
+            <p><strong>Nombre:</strong> </p><input type="text" id="nombre" placeholder="Ingrese su Nombre"><br><br>
+
+            <input type="button" value="ACEPTAR" id="aceptar" onclick=bienvenida()  class="btn btn-danger"> <br>
+
+            <img src="img/2.gif" alt="" id="2"><br>
+
+            <input type="button" value="GENERAR" id="generar" onclick=x.crear() class="btn btn-danger"> <br>
+
+            <img src="img/2.gif" alt="ñ" id="23"> <br>
+
+            <input type="button" value="BARAJAR" id="barajar" onclick=x.mezclar() class="btn btn-danger"> <br>
+
+            <img src="img/2.gif" alt="ñ" id="5"><br>
+
+        </div>
+        <div id="contenedor3">
+            
+            <input type="button" value="PERDIR CARTILLAS" id="mostrar" onclick="validarCartas()" class="btn btn-danger"> <br> <br>
+          
+            <div id="contenedor4">
+                <img src="img/trasera.png">
+                <p id="texto1">
+                    Aun no consigues <br> tu 21 contiua <br> jugando.....
+                </p>
+    
+                <p id="texto2">
+                    Conseguiste tu <br> 21 eres un <br> GANADOR
+                </p>
+    
+                <p id="texto3">
+                    Lamentable de <br> excediste <br> y perdiste
+                </p>
+            </div>
+            <div id="contenedor5">
+                <img src="img/corazonesRojos/corazones2.png" id="dos">
+                <img src="img/corazonesRojos/corazones3.png" id="tres">
+                <img src="img/corazonesRojos/corazones4.png" id="cuatro">
+                <img src="img/corazonesRojos/corazones5.png" id="cinco">
+                <img src="img/corazonesRojos/corazones6.png" id="seis">
+                <img src="img/corazonesRojos/corazones7.png" id="siete">
+                <img src="img/corazonesRojos/corazones8.png" id="ocho">
+                <img src="img/corazonesRojos/corazones9.png" id="nueve">
+                <img src="img/corazonesRojos/corazones10.png" id="diez">
+                <img src="img/corazonesRojos/corazonesJ.png" id="once">
+                <img src="img/corazonesRojos/corazonesQ.png" id="doce">
+                <img src="img/corazonesRojos/corazonesK.png" id="trece">
+                <img src="img/corazonesRojos/corazonesA.png" id="catorse">
+                <img src="img/diamantesRojos/diamantesA.png" id="quince">
+                <img src="img/diamantesRojos/diamantes2.png" id="dieciseis">
+                <img src="img/diamantesRojos/diamantes3.png" id="diecisiete">
+                <img src="img/diamantesRojos/diamantes4.png" id="dieciocho">
+                <img src="img/diamantesRojos/diamantes5.png" id="diecinueve">
+                <img src="img/diamantesRojos/diamantes6.png" id="veinte">
+                <img src="img/diamantesRojos/diamantes7.png" id="veintiuno">
+                <img src="img/diamantesRojos/diamantes8.png" id="veintidos">
+                <img src="img/diamantesRojos/diamantes9.png" id="veintitres">
+                <img src="img/diamantesRojos/diamantes10.png" id="veinticuatro">
+                <img src="img/diamantesRojos/diamantesJ.png" id="veinticinco">
+                <img src="img/diamantesRojos/diamantesQ.png" id="veintiseis">
+                <img src="img/diamantesRojos/diamantesK.png" id="veintisiete">
+                <img src="img/picasNegros/picasA.png" id="veintiocho">
+                <img src="img/picasNegros/picas2.png" id="veintinueve">
+                <img src="img/picasNegros/picas3.png" id="treinta">
+                <img src="img/picasNegros/picas4.png" id="treintayuno">
+                <img src="img/picasNegros/picas5.png" id="treintaydos">
+                <img src="img/picasNegros/picas6.png" id="treintaytres">
+                <img src="img/picasNegros/picas7.png" id="treintaycuatro">
+                <img src="img/picasNegros/picas8.png" id="treintaycinco">
+                <img src="img/picasNegros/picas9.png" id="treintayseis">
+                <img src="img/picasNegros/picas10.png" id="treintaysiete">
+                <img src="img/picasNegros/picasJ.png" id="treintayocho">
+                <img src="img/picasNegros/picasQ.png" id="treintaynueve">
+                <img src="img/picasNegros/picasK.png" id="cuarenta">
+                <img src="img/trebolesNegros/trebolesA.png" id="cuarentayuno">
+                <img src="img/trebolesNegros/treboles2.png" id="cuarentaydos">
+                <img src="img/trebolesNegros/treboles3.png" id="cuarentaytres">
+                <img src="img/trebolesNegros/treboles4.png" id="cuarentaycuatro">
+                <img src="img/trebolesNegros/treboles5.png" id="cuarentaycinco">
+                <img src="img/trebolesNegros/treboles6.png" id="cuarentayseis">
+                <img src="img/trebolesNegros/treboles7.png" id="cuarentaysiete">
+                <img src="img/trebolesNegros/treboles8.png" id="cuarentayocho">
+                <img src="img/trebolesNegros/treboles9.png" id="cuarentaynueve">
+                <img src="img/trebolesNegros/treboles10.png" id="cincuenta">
+                <img src="img/trebolesNegros/trebolesJ.png" id="cincuentayuno">
+                <img src="img/trebolesNegros/trebolesQ.png" id="cincuentaydos">
+                <img src="img/trebolesNegros/trebolesK.png" id="cincuentaytres">
+
+            </div>
+        
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="juego.js"></script>
+<script>
+
+
+</script>
+
+
+</html>

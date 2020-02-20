@@ -1,0 +1,74 @@
+h1{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+  
+body {
+    background-image:url(img/1.jpg);
+    
+    
+  }
+  #ocultar,#ocultar2,#ocultar3,#ocultar4{
+      display: none;
+
+      margin-right: auto;
+  }
+  p{
+      color: white;
+  }
+  #contenedor{
+    float :left;
+    width: 1200px;
+    height: 600px;
+    padding: 15px;
+    margin-left: 50px;
+    
+    }
+    #contenedor2{
+    float: left;; 
+    width: 300;
+    height: 300px;
+    margin-right: 10px;
+    }
+    #contenedor4{
+        float: right;; 
+        width: 300;
+        height: 600px;
+        margin-right: 10px;
+        
+        }
+        #contenedor5{
+            float: right;; 
+            width: 300;
+            height: 600px;
+            margin-right: 100px;
+            
+            }
+    #contenedor3{
+        float :right;
+        width: 800px;
+        height: 600px;
+                
+        }
+        #texto1,#texto2,#texto3{
+            font-size: 250%;
+            display: none;
+        }
+        #texto1{
+            text-align: center;
+            background-color: orangered;
+        }
+        
+        #texto2{
+            text-align: center;
+            background-color: green;
+        }
+        
+        #texto3{
+            text-align: center;
+            background-color: red;
+        }
+        #dos,#tres,#cuatro,#cinco,#seis,#siete,#ocho,#nueve,#diez,#once,#doce,#trece,#catorse,#quince,#dieciseis,#diecisiete,#dieciocho,#diecinueve,#veinte,#veintiuno,#veintidos,#veintitres,#veinticuatro,#veinticinco,#veintiseis,#veintisiete,#veintiocho,#veintinueve,#treinta,#treintayuno,#treintaydos,#treintaytres,#treintaycuatro,#treintaycinco,#treintayseis,#treintaysiete,#treintayocho,#treintaynueve,#cuarenta,#cuarentayuno,#cuarentaydos,#cuarentaytres,#cuarentaycuatro,#cuarentaycinco,#cuarentayseis,#cuarentaysiete,#cuarentayocho,#cuarentaynueve,#cincuenta,#cincuentayuno,#cincuentaydos,#cincuentaytres{
+            display: none;
+        }
